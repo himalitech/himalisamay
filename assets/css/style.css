@@ -1,0 +1,91 @@
+body {
+    font-family: Comfortaa;
+    background-color: #fff;
+    background: url(../img/bg-theme8.jpg);    
+}
+.header {
+    /* background-color: #fff; */
+    background: url(../img/shyambhu.png) no-repeat 50% 0 fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+#clock {
+    /* padding: 10px; */
+    /* background-color: gold; */
+}
+.clock {
+    /* padding: 10px;
+    background-color:#fff; */
+}
+.navbar {
+    font-family: Montserrat;
+    background: url(../img/bg-theme8.jpg);
+    box-shadow: 0 -7px 19px 5px rgba(0, 0, 0, .5);
+}
+.navbar-brand {
+    font-family: Pacifico;
+    font-size: 2.25rem;
+}
+.navbar-brand span {
+    vertical-align: middle;
+    color: rgb(169,3,41);
+}
+.card-body {
+    background: url(../img/bg-theme8.jpg);
+    font-family: Montserrat;              
+}
+.h2,.header-text {
+                    color: rgb(169,3,41);
+                    /* text-shadow: 0px 5px 5px #333333; */
+                    font-weight: bold;
+}
+.intro {
+    /* font-weight: bold; */
+    /* border: 1px solid rgba(0, 0, 0, .5); */
+    padding: 20px;
+    background: transparent url(../img/bg-theme8.jpg);
+    opacity: 0.8;
+    display: block;
+    /* box-shadow: 0 -7px 19px 5px rgba(0, 0, 0, .5); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.call-us-btn {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efc5ca+0,d24b5a+50,ba2737+51,f18e99+100;Red+Gloss+%233 */
+background: rgb(239,197,202); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(239,197,202,1) 0%, rgba(210,75,90,1) 50%, rgba(186,39,55,1) 51%, rgba(241,142,153,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(239,197,202,1) 0%,rgba(210,75,90,1) 50%,rgba(186,39,55,1) 51%,rgba(241,142,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(239,197,202,1) 0%,rgba(210,75,90,1) 50%,rgba(186,39,55,1) 51%,rgba(241,142,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#f18e99',GradientType=0 ); /* IE6-9 */
+}
+.display-3 {
+
+}
+.custom-title {
+    color: #bc7b05;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+footer {
+    margin-top: 3rem;
+        padding-top: 5rem;
+padding-bottom: 2rem;
+background-color: #333333;
+color: #fff;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+background: rgb(69,72,77); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+#mapid { height: 200px;}
+
+#npflag {
+    vertical-align: middle;
+    border-style: none;
+    height: 42px;
+};

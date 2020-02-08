@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!-- Titles -->
+	<title>{{ site.title }}</title>
+	<meta name="description" content="{{ site.title }}"><meta name="keywords" content="{{ site.keywords }}"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="author" content="{{ site.company }}"><!-- Favicon -->
+	<link href="/favicon/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" />
+	<link href="/favicon/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60" />
+	<link href="/favicon/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
+	<link href="/favicon/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+	<link href="/favicon/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
+	<link href="/favicon/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+	<link href="/favicon/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" />
+	<link href="/favicon/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+	<link href="/favicon/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+	<link href="/favicon/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png" />
+	<link href="/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+	<link href="/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png" />
+	<link href="/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+	<link href="/favicon/manifest.json" rel="manifest" /><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><!-- CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet" />
+	<link href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/css/bootstrap-material-design.min.css" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" /><!-- Fonts --><script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" /><!-- Custom -->
+	<link href="assets/css/clock.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/style.css" rel="stylesheet" />
+	<link crossorigin="" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" rel="stylesheet" />
+</head>
+<body id="page-top"><!-- Facebook -->
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script><!-- Navigation -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="display: none !important;"><a class="navbar-brand" href="#"><img alt="" height="52" src="assets/img/logo.jpg" width="42" /><span>Himali Samay</span></a><button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"></button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+</ul>
+
+<form class="form-inline my-2 my-lg-0"><span class="btn btn-raised btn-danger call-us-btn"><span style="color: yellow"><b>CALL US AT</b></span><br />
+<b>{{ site.phone }}</b> </span> &nbsp;&nbsp; <a href="{{ site.facebook_url }}" target="_blank"><img alt="" class="img-fluid" src="assets/img/facebook.png" /></a> &nbsp;&nbsp; <a href="{{ site.instagram_url }}" target="_blank"><img class="img-fluid" src="assets/img/instagram.png" /></a> &nbsp;&nbsp; <a href="mailto:{{ site.email }}" target="_blank"><img class="img-fluid" src="assets/img/gmail.png" /></a></form>
+</div>
+</nav>
+<!-- Header -->
+
+<div class="header" id="home">
+<div class="container mb-12 text-center animated fadeIn"><!-- Animated clock -->
+<div class="d-flex justify-content-center" id="clock">
+<article class="text-center clock simple">
+<div class="hours-container" style='display: none;'>
+<div class="hours"></div>
+</div>
+
+<div class="minutes-container" style='display: none;'>
+<div class="minutes"></div>
+</div>
+
+<div class="seconds-container" style='display: none;'>
+<div class="seconds"></div>
+</div>
+</article>
+</div>
+<span class='intro'>
+<h2 class="header-text">{{ site.intro_title }}</h2>
+<p class='font-weight-bold'>{{ site.intro_description }}</p>
+<p class="card-text"><span class="text-muted font-weight-bold">Made in {{ site.country }} with </span><i style='color: red' class="fa fa-heart" aria-hidden="true"></i></p>
+</span>
+</div>
+
+<hr /></div>
+<!-- Main Content -->
+
+<div class="container" id="watches">&nbsp;
+<h2 class="text-center">New Arrival: Walnut Wood Watch! <br/><a target='_blank' href='{{ site.facebook_url }}/posts/955712131295021'></a></h2>
+<!-- <h2 class="text-center">Special Offer! <img alt="" class="img-fluid" src="assets/img/15off.png" width="132" /></h2> -->
+<hr />
+<div class="row">
+<div class="col-md">
+<div class="card"><!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+<div class="card-img-top carousel slide" data-ride="carousel" id="carouselBoxes">
+<ol class="carousel-indicators">
+	<li class="active" data-slide-to="0" data-target="#carouselBoxes"></li>
+	<li data-slide-to="1" data-target="#carouselBoxes"></li>
+</ol>
+
+<div class="carousel-inner">
+<div class="carousel-item active"><img alt="First slide" class="img-fluid rounded d-block w-100" src="assets/img/watches/boxed-1.jpg" /></div>
+
+<div class="carousel-item"><img alt="Second slide" class="img-fluid rounded d-block w-100" src="assets/img/watches/boxed-2.jpg" /></div>
+</div>
+<a class="carousel-control-prev" data-slide="prev" href="#carouselBoxes" role="button"><span class="sr-only">Previous</span> </a> <a class="carousel-control-next" data-slide="next" href="#carouselBoxes" role="button"> <span class="sr-only">Next</span> </a></div>
+
+<div class="card-body">
+<h5 class="text-center">Beautiful Wooden Box</h5>
+<!-- <p class="card-text">Get free beautiful wooden box. Perfect gift for your loved one's!</p> --><!-- <span class="btn btn-lg btn-outline-warning btn-raised">FLAT 15% DISCOUNT</span> --><label class="label label-success btn btn-outline-success btn-block font-weight-bold">FREE</label></div>
+</div>
+</div>
+
+<div class="col-md">
+<div class="card"><!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+<div class="card-img-top carousel slide" data-ride="carousel" id="carouselWooden">
+<ol class="carousel-indicators">
+	<li class="active" data-slide-to="0" data-target="#carouselWooden"></li>
+	<li data-slide-to="1" data-target="#carouselWooden"></li>
+</ol>
+
+<div class="carousel-inner">
+<div class="carousel-item active"><img alt="First slide" class="img-fluid rounded d-block w-100" src="assets/img/watches/wooden-1.jpg" /></div>
+
+<div class="carousel-item"><img alt="Second slide" class="img-fluid rounded d-block w-100" src="assets/img/watches/wooden-2.jpg" /></div>
+</div>
+<a class="carousel-control-prev" data-slide="prev" href="#carouselWooden" role="button"><span class="sr-only">Previous</span> </a> <a class="carousel-control-next" data-slide="next" href="#carouselWooden" role="button"> <span class="sr-only">Next</span> </a></div>
+
+<div class="card-body">
+<h5 class="text-center">Classic Wooden Band</h5>
+<!-- <p class="card-text">Every watch is perfectly wrapped in a beautiful wooden box.</p> --><!-- <a href="#" class="btn btn-lg btn-outline-warning btn-raised">FLAT 15% DISCOUNT</a> --><label class="label label-success btn btn-outline-danger btn-block font-weight-bold">ORDER TODAY</label></div>
+</div>
+</div>
+
+<div class="col-md">
+<div class="card"><!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+<div class="card-img-top carousel slide" data-ride="carousel" id="carouselLeather">
+<ol class="carousel-indicators">
+	<li class="active" data-slide-to="0" data-target="#carouselLeather"></li>
+	<li data-slide-to="1" data-target="#carouselLeather"></li>
+	<li data-slide-to="2" data-target="#carouselLeather"></li>
+</ol>
+
+<div class="carousel-inner">
+<div class="carousel-item active"><img alt="First slide" class="img-fluid rounded d-block w-100" src="assets/img/watches/leather-1.jpg" /></div>
+
+<div class="carousel-item"><img alt="First slide" class="img-fluid rounded d-block w-100" src="assets/img/watches/leather-2.jpg" /></div>
+
+<div class="carousel-item"><img alt="First slide" class="img-fluid rounded d-block w-100" src="assets/img/watches/leather-3.jpg" /></div>
+</div>
+<a class="carousel-control-prev" data-slide="prev" href="#carouselLeather" role="button"><span class="sr-only">Previous</span> </a> <a class="carousel-control-next" data-slide="next" href="#carouselLeather" role="button"> <span class="sr-only">Next</span> </a></div>
+
+<div class="card-body">
+<h5 class="text-center">Classic Leather Band</h5>
+<!-- <p class="card-text">Every watch is wrapped in a beautiful wooden box.</p> --><!-- <a href="#" class="btn btn-lg btn-outline-warning btn-raised">FLAT 15% DISCOUNT</a> --><label class="label label-success btn btn-outline-danger btn-block font-weight-bold">ORDER TODAY</label></div>
+</div>
+</div>
+</div>
+
+<hr /></div>
+
+<p></p>
+
+<div class="container">
+<div class="row">
+<div class="col-md">
+<div class="card">
+<div class="card-body">
+<div class="media"><img alt="FREE DELIVERY" class="d-flex mr-3" src="assets/img/delivery.png" />
+<div class="media-body">
+<h5 class="mt-0 custom-title">FREE DELIVERY</h5>
+Anywhere within Kathmandu valley (inside ring-road area). Additional charge incur for delivery outside valley.</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md">
+<div class="card">
+<div class="card-body">
+<div class="media"><img alt="INTERNATIONAL SHIPPING" class="d-flex mr-3" src="assets/img/earth.png" />
+<div class="media-body">
+<h5 class="mt-0 custom-title">INTERNATIONAL SHIPPING</h5>
+We ship to over 80 countries worldwide within 7-10 days.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<p></p>
+
+<p></p>
+
+<div class="container">
+<div class="row">
+<div class="col-md">
+<div class="card">
+<div class="card-body">
+<div class="media"><img alt="Cash-on-Delivery (CoD)" class="d-flex mr-3" src="assets/img/cod.png" />
+<div class="media-body">
+<h5 class="mt-0 custom-title">Cash-on-Delivery (CoD)</h5>
+Easy and hassel-free Cash-on-Delivery payment.</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md">
+<div class="card">
+<div class="card-body">
+<div class="media"><img alt="CALL TO ORDER" class="d-flex mr-3" src="assets/img/whatsapp.png" />
+<div class="media-body">
+<h5 class="mt-0 custom-title">CALL TO ORDER TODAY</h5>
+Call us anytime to place your order. We deliver the same day!</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<hr /></div>
+
+<p></p>
+
+<div class="container text-center" id="store"><br />
+<img alt="" src="assets/img/visit-us.png" />
+<hr />
+<div id="mapid"></div>
+</div>
+<!-- <br>
+<div class='text-center'>
+	<!-- <span class='btn btn-lg btn-raised btn-warning'>
+		<span style='color: yellow'>CALL US NOW</span>
+		<br/>
+		<b>+977-9841-633739</b>
+	</span>
+	<a href='tel:+9779841633739'>
+		<img class='img-fluid w-5' src="assets/img/call-us.png" alt="">
+	</a>
+</div> -->
+
+<footer class="footer text-center" id="contact">
+<div class="container">
+<div class="row">
+<div class="col-md-4 mb-5 mb-lg-0">
+<h4 class="text-muted text-uppercase mb-4">&nbsp;<b>Contact Us</b></h4>
+
+<p class="lead mb-0">{{ site.company }}</p>
+&nbsp;&nbsp;{{ site.location }}
+
+<p><br />
+&nbsp;<b>{{ site.phone }}</b><br />
+&nbsp;<a href="mailto:{{ site.email }}" target="_blank">{{ site.email }}</a><br />
+<a href="{{ site.url }}" target="_blank">{{ site.url }}</a></p>
+</div>
+
+<div class="col-md-4 mb-5 mb-lg-0">
+<h4 class="text-muted text-uppercase mb-4">&nbsp;<b>Facebook</b></h4>
+
+<div class="fb-page" data-adapt-container-width="true" data-hide-cover="false" data-href="{{ site.facebook_url }}" data-show-facepile="true" data-small-header="false">
+<blockquote cite="{{ site.facebook_url }}" class="fb-xfbml-parse-ignore"><a href="{{ site.facebook_url }}">Himali Samay</a></blockquote>
+</div>
+</div>
+
+<div class="col-md-4">
+<h4 class="text-muted text-uppercase mb-4">&nbsp;<b>Instagram</b></h4>
+<!-- InstaWidget --><a href="https://instawidget.net/v/user/himalisamay" id="link-d2021d8a497fa249150bb61e93629fab4aa68e546704057bdd6be949efba0847">@himalisamay</a> <script src="https://instawidget.net/js/instawidget.js?u=d2021d8a497fa249150bb61e93629fab4aa68e546704057bdd6be949efba0847&width=300px"></script></div>
+</div>
+</div>
+<br />
+<span class="small text-center">
+<span class="text-muted">
+Copyright &copy; {{ 'now' | date: "%Y" }}<br />Made in <img height="42px" src="assets/img/flag-of-nepal.png" /> with <i style='color: red' class="fa fa-heart" aria-hidden="true"></i></span><br />Designed by <a target='_blank' href='{{ site.designed_by_url }}'>{{ site.designed_by }}</a></span></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+ crossorigin="anonymous"></script><script src="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/js/bootstrap-material-design.js" integrity="sha384-3xciOSDAlaXneEmyOo0ME/2grfpqzhhTcM4cE32Ce9+8DW/04AGoTACzQpphYGYe" crossorigin="anonymous"></script><!-- Maps --><script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="crossorigin=""></script><!-- Custom Scripts --><script>
+	$(document).ready(function() {
+	$('.carousel').carousel();
+	function initLocalClocks() {
+		// Get the local time using JS
+		var date = new Date;
+		var seconds = date.getSeconds();
+		var minutes = date.getMinutes();
+		var hours = date.getHours();
+
+		// Create an object with each hand and it's angle in degrees
+		var hands = [
+			{
+				hand: 'hours',
+				angle: (hours * 30) + (minutes / 2)
+			},
+			{
+				hand: 'minutes',
+				angle: (minutes * 6)
+			},
+			{
+				hand: 'seconds',
+				angle: (seconds * 6)
+			}
+		];
+		// Loop through each of these hands to set their angle
+		for (var j = 0; j < hands.length; j++) {
+			var elements = document.querySelectorAll('.' + hands[j].hand);
+			for (var k = 0; k < elements.length; k++) {
+				elements[k].style.webkitTransform = 'rotateZ(' + hands[j].angle + 'deg)';
+				elements[k].style.transform = 'rotateZ(' + hands[j].angle + 'deg)';
+				// If this is a minute hand, note the seconds position (to calculate minute position later)
+				if (hands[j].hand === 'minutes') {
+					elements[k].parentNode.setAttribute('data-second-angle', hands[j + 1].angle);
+				}
+			}
+		}
+		$('.hours-container').fadeIn()
+		$('.minutes-container').fadeIn()
+		$('.seconds-container').fadeIn()
+	}
+
+	function initMaps() {
+		var mymap = L.map('mapid').setView([27.7076992, 85.31200609999996], 16);
+		var marker = L.marker([27.7076992, 85.31200609999996]).addTo(mymap);
+		marker.bindPopup("<b>{{ site.company }}</b><br>Ason Chowk, Kathmandu, Nepal").openPopup();
+
+		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+			maxZoom: 18,
+			id: 'mapbox.streets',
+			accessToken: 'pk.eyJ1IjoiaGltYWxpc2FtYXkiLCJhIjoiY2pidmNsa3R5MXNmYzJxcjBhOGs0ZDR0OSJ9.ng02bmKcj2ijyO3rgY9Bxg'
+		}).addTo(mymap);
+	}
+	
+	$('body').bootstrapMaterialDesign();
+		initLocalClocks();
+		initMaps();
+		// handle links with @href started with '#' only
+		if ($('cfapps-side-nav').length === 1) {
+    $('cfapps-side-nav').on('click', 'a[href^="#"]', function (e) {
+        // target element id
+        var id = $(this).attr('href');
+
+        // target element
+        var $id = $(id);
+        if ($id.length === 0) {
+            return;
+        }
+
+        // prevent standard hash navigation (avoid blinking in IE)
+        e.preventDefault();
+
+        // top position relative to the document
+        var pos = $id.offset().top;
+
+        // animated top scrolling
+        $('cfapps-side-nav-button').click();
+        $('body, html').animate({ scrollTop: pos });
+    });
+}
+	});
+</script></body>
+</html>

@@ -1,0 +1,138 @@
+.clock {
+  border-radius: 4%;
+  /* background: transparent url(../img/watches/logo.jpg) no-repeat center; */
+  background: transparent url(../img/round-clock.png) no-repeat center;
+  background-size: 88%;
+  height: 16em;
+  padding-bottom: 31%;
+  position: relative;
+  width: 14em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* box-shadow: 10px 10px 5px grey; */
+  /* right: 1.5em; */
+}
+
+.clock.simple:after {
+  background: #fff;
+  border-radius: 50%;
+  border: 8px double rgb(169,3,41);
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 5%;
+  height: 5%;
+  z-index: 10;
+}
+
+.minutes-container, .hours-container, .seconds-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.frame {
+  /*
+  http://colrd.com/palette/19699/?download=css
+
+border:solid 5vmin #c16c11;
+  border-bottom-color:#99520c;
+  border-left-color:#c16c11;
+  border-radius:2px;
+  border-right-color:#c16c11;
+  border-top-color:#99520c;
+  */
+  background-color:#ddc;
+  border:solid 5vmin #eee;
+  border-bottom-color:#fff;
+  border-left-color:#eee;
+  border-radius:2px;
+  border-right-color:#eee;
+  border-top-color:#ddd;
+  box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+  box-sizing:border-box;
+  display:inline-block;
+  /* margin:10vh 10vw; */
+  /* height:80vh; */
+  padding:8vmin;
+  position:relative;
+  text-align:center;
+  &:before {
+    border-radius:2px;
+    bottom:-2vmin;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+    content:"";
+    left:-2vmin;
+    position:absolute;
+    right:-2vmin;
+    top:-2vmin;
+  }
+  &:after {
+    border-radius:2px;
+    bottom:-2.5vmin;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+    content:"";
+    left:-2.5vmin;
+    position:absolute;
+    right:-2.5vmin;
+    top:-2.5vmin;
+  }
+}
+
+.hours {
+  background: black;
+  height: 15%;
+  left: 48.75%;
+  position: absolute;
+  top: 35%;
+  transform-origin: 50% 100%;
+  width: 2%;
+  border-radius: 85%/10%;
+}
+
+.minutes {
+background: black;
+    height: 20%;
+    left: 49.5%;
+    position: absolute;
+    top: 30%;
+    transform-origin: 50% 100%;
+    width: 2%;
+    z-index: 8;
+  border-radius: 85%/10%;
+    
+}
+
+.seconds {
+    background:  rgb(169,3,41);
+    height: 20%;
+    left: 49.5%;
+    position: absolute;
+    top: 30%;
+    transform-origin: 50% 100%;
+    width: 1.5%;
+    z-index: 8;
+  border-radius: 85%/10%;
+    
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.hours-container {
+  animation: rotate 43200s infinite linear;
+}
+.minutes-container {
+  animation: rotate 3600s infinite linear;
+}
+.seconds-container {
+  /*animation: rotate 60s infinite steps(60);*/
+  animation: rotate 60s infinite linear;
+}
