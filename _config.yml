@@ -27,8 +27,8 @@ phone: +977-9841633739
 country: Nepal
 facebook_url: https://facebook.com/himalisamay
 instagram_url: https://instagram.com/himalisamay
-# baseurl: "himalisamay.watch" # the subpath of your site, e.g. /blog
-url: "https://himalisamay.watch" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "himalisamay.com" # the subpath of your site, e.g. /blog
+url: "https://himalisamay.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  himalitech
 
 # Build settings
