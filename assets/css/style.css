@@ -5,7 +5,8 @@ body {
 }
 .header {
     /* background-color: #fff; */
-    background: url(../img/shyambhu.png) no-repeat 50% 0 fixed;
+/*     background: url(../img/shyambhu.png) no-repeat 50% 0 fixed; */
+    background: url(../img/shyambhu.png) no-repeat 50% 0;
     background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
