@@ -33,7 +33,13 @@ body {
     vertical-align: middle;
     color: rgb(169,3,41);
 }
+
+.card {
+    border-radius: 10px;
+}
+
 .card-body {
+    border-radius: 10px;
     background: url(../img/bg-theme8.jpg);
     font-family: Montserrat;              
 }
@@ -47,7 +53,8 @@ body {
     /* border: 1px solid rgba(0, 0, 0, .5); */
     padding: 20px;
     background: transparent url(../img/bg-theme8.jpg);
-    opacity: 0.8;
+    border-radius: 10px;
+    opacity: 0.95;
     display: block;
     /* box-shadow: 0 -7px 19px 5px rgba(0, 0, 0, .5); */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
